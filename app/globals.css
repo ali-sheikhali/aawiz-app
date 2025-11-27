@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* i have these colors in other project and copy here */
+@theme {
+  --color-primary: #101828;
+  --color-secondary: #344054;
+  --color-tertiary: #667085;
+  --color-quaternary: #98a2b3;
+
+  /* fill colors */
+  --color-fill-primary: #ffffff;
+  --color-fill-secondary: #f9fafb;
+  --color-fill-tertiary: #f2f4f7;
+
+  /* brand colors */
+  --color-brand-primary: #101828;
+  --color-brand-secondary: #996515;
+
+  /* other colors */
+  --color-red: #f04438;
+  --color-green: #12b76a;
+  --color-blue: #1570ef;
+  --color-yellow: #fdb022;
+  --color-purple: #6938ef;
+  --color-pink: #dd2590;
+  --color-orange: #fb6514;
+  --color-brown: #9c2a10;
+  --color-gray: #667085;
+
+  --color-stroke-primary: #e4e7ec;
+  --color-stroke-secondary: #344054;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  @apply bg-gray-50;
 }
