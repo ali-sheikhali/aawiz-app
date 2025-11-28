@@ -8,6 +8,9 @@ import Button from "@/components/base/Button";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 export default function LoginPage() {
+  const router = useRouter();
+
+  // form schema
   const {
     register,
     handleSubmit,
@@ -15,12 +18,14 @@ export default function LoginPage() {
   } = useForm<LoginSchemaType>({
     resolver: zodResolver(loginSchema),
   });
-  const router = useRouter();
+
+
+  // handle form submit
   const onsubmit = (data: LoginSchemaType) => {
     console.log("login", data);
     if (data.email === "aawiz@gmail.com" && data.password === "123456") {
       toast.success("login");
-      router.push("/");
+      router.push("/dashboard");
     } else {
       toast.error("not login");
     }
@@ -28,10 +33,10 @@ export default function LoginPage() {
 
   return (
     <main
-      className={`w-full min-h-screen flex flex-col justify-center items-center bg-gray-200 `}
+      className={`w-full min-h-screen flex flex-col justify-center items-center `}
     >
       <div className="w-10/12 max-w-sm bg-white p-6 rounded-xl shadow-lg flex flex-col gap-6">
-        <h1 className="text-center font-bold text-lg">wellcome to aawiz app</h1>
+        <h1 className="text-center font-bold text-lg text-primary dark:text-red">wellcome to aawiz app</h1>
         <FormWrapper onSubmit={handleSubmit(onsubmit)}>
           <FormInput
             label="Email"

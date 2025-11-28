@@ -36,7 +36,7 @@ export default function FormInput({
         id={label}
         {...register}
         {...rest}
-        className="border rounded-md px-3 py-2 focus:outline-none "
+        className="border border-stroke-secondary dark:border-red rounded-md px-3 py-2 focus:outline-none "
       />
       {password && (
         <span
