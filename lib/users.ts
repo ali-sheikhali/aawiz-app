@@ -1,4 +1,4 @@
-export const productsFetchApi = async () => {
+export const usersFetchApi = async () => {
   try {
     const res = await fetch("https://jsonplaceholder.typicode.com/users", {
       method: "GET",

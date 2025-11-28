@@ -22,7 +22,6 @@ export default function LoginPage() {
 
   // handle form submit
   const onsubmit = (data: LoginSchemaType) => {
-    console.log("login", data);
     if (data.email === "aawiz@gmail.com" && data.password === "123456") {
       toast.success("login");
       router.push("/dashboard");

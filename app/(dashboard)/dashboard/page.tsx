@@ -1,9 +1,9 @@
 import UsersList from "@/components/users/UsersList";
-import { productsFetchApi } from "@/lib/products";
+import { usersFetchApi } from "@/lib/users";
 import { Suspense } from "react";
 
 export default async function DashBoardPage() {
-  const resposne = await productsFetchApi();
+  const resposne = await usersFetchApi();
 
   return (
     <div>
