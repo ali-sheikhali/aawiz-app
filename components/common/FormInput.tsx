@@ -2,8 +2,6 @@
 
 import { InputHTMLAttributes, useState } from "react";
 import { FieldError, UseFormRegisterReturn } from "react-hook-form";
-// import { FiEyeOff } from "react-icons/fi";
-// import { FiEye } from "react-icons/fi";
 import eyeIcon from "../../public/eye.svg"
 import eyeCloseIcon from "../../public/eye-closed-24.svg"
 import Image from "next/image";
