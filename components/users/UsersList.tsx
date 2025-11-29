@@ -1,5 +1,5 @@
 import { UserType } from "@/types/usersType";
-import personIcon from "../../public/images.png"
+import personIcon from "../../public/images.png";
 import Image from "next/image";
 import Button from "../base/Button";
 import Link from "next/link";
@@ -8,7 +8,6 @@ interface UsersListProps {
 }
 
 export default function UsersList({ users }: UsersListProps) {
-
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -18,15 +17,20 @@ export default function UsersList({ users }: UsersListProps) {
             key={user.id}
           >
             <div className="flex items-center gap-3">
-             <div className="bg-gray-100 rounded-full p-1">
-             <Image className="rounded-full object-cover" src={personIcon} alt={user.name} width={36} height={36} />   
-                </div>   
-            <p>{user.name}</p>
-
+              <div className="bg-gray-100 rounded-full p-1">
+                <Image
+                  className="rounded-full object-cover"
+                  src={personIcon}
+                  alt={user.name}
+                  width={36}
+                  height={36}
+                />
+              </div>
+              <p>{user.name}</p>
             </div>
             <p className="ml-13">{user.email}</p>
-            <Link className="w-10/12 mx-auto" href={`/users/${user.id}`} >
-                <Button name="More details" type="button" />
+            <Link className="w-10/12 mx-auto" href={`/users/${user.id}`}>
+              <Button name="More details" type="button" />
             </Link>
           </div>
         ))}
