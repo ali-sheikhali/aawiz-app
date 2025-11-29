@@ -46,7 +46,7 @@ export default function HamburgerMenu() {
         className={`
           ${openMenu ? "translate-x-0" : "translate-x-full"}
           w-40 h-screen right-0 top-0 fixed bg-brand-primary dark:bg-fill-primary
-          text-fill-primary dark:text-brand-primary transition-transform duration-300 p-4
+          text-fill-primary dark:text-brand-primary transition-transform duration-300 p-4 z-1000
         `}
       >
         <div className="flex flex-col items-start p-2 gap-4">
