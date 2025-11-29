@@ -21,7 +21,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="p-2"
+      className="p-2 cursor-pointer"
     >
       <Image
         src={theme === "light" ? moonIcon : sunIcon}
