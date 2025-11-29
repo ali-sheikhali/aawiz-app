@@ -2,9 +2,11 @@
 
 import { InputHTMLAttributes, useState } from "react";
 import { FieldError, UseFormRegisterReturn } from "react-hook-form";
-import { FiEyeOff } from "react-icons/fi";
-import { FiEye } from "react-icons/fi";
-
+// import { FiEyeOff } from "react-icons/fi";
+// import { FiEye } from "react-icons/fi";
+import eyeIcon from "../../public/eye.svg"
+import eyeCloseIcon from "../../public/eye-closed-24.svg"
+import Image from "next/image";
 type FormInputProps = {
   label?: string;
   type?: string;
@@ -43,7 +45,8 @@ export default function FormInput({
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-12 transform -translate-y-1/2 cursor-pointer"
         >
-          {showPassword ? <FiEyeOff /> : <FiEye />}
+          {/* {showPassword ? <FiEyeOff /> : <FiEye />} */}
+          <Image src={showPassword ? eyeCloseIcon : eyeIcon} alt="eye-password" width={24} height={24} />
         </span>
       )}
       {errors && (
