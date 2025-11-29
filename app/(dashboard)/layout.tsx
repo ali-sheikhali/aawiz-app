@@ -8,7 +8,7 @@ export default function DashboardLayout({
   return (
     <div>
         <NavBar />
-        <div className="w-10/12 mx-auto mt-10">{children}</div>
+        <div className="w-10/12 mx-auto my-10">{children}</div>
     </div>
   );
 }

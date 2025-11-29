@@ -23,10 +23,10 @@ export default function LoginPage() {
   // handle form submit
   const onsubmit = (data: LoginSchemaType) => {
     if (data.email === "aawiz@gmail.com" && data.password === "123456") {
-      toast.success("login");
+      toast.success("wellcome to aawiz website");
       router.push("/dashboard");
     } else {
-      toast.error("not login");
+      toast.error("Email or password not correct");
     }
   };
 
@@ -34,8 +34,8 @@ export default function LoginPage() {
     <main
       className={`w-full min-h-screen flex flex-col justify-center items-center `}
     >
-      <div className="w-10/12 max-w-sm bg-white p-6 rounded-xl shadow-lg flex flex-col gap-6">
-        <h1 className="text-center font-bold text-lg text-primary dark:text-red">wellcome to aawiz app</h1>
+      <div className="w-10/12 max-w-sm bg-white dark:bg-brand-primary p-6 rounded-xl shadow-lg flex flex-col gap-6">
+        <h1 className="text-center font-bold text-lg text-primary dark:text-fill-primary">wellcome to aawiz app</h1>
         <FormWrapper onSubmit={handleSubmit(onsubmit)}>
           <FormInput
             label="Email"

@@ -28,7 +28,7 @@ export default function FormInput({
   return (
 
     <div className={`${hidden ? "hidden" : ""} flex flex-col gap-1 relative`}>
-      <label htmlFor={label} className={`mb-1 text-gray-700 text-sm ${isRequire ? "font-semibold":""}`}>
+      <label htmlFor={label} className={`mb-1 text-gray-700 dark:text-fill-primary text-sm ${isRequire ? "font-semibold":""}`}>
         {label} {isRequire && <span className="text-red">*</span>}
       </label>
       <input
@@ -36,7 +36,7 @@ export default function FormInput({
         id={label}
         {...register}
         {...rest}
-        className="border border-stroke-secondary dark:border-red rounded-md px-3 py-2 focus:outline-none "
+        className="border border-stroke-secondary dark:border-fill-primary rounded-md px-3 py-2 focus:outline-none "
       />
       {password && (
         <span
