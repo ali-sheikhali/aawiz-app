@@ -43,7 +43,6 @@ export default function FormInput({
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-12 transform -translate-y-1/2 cursor-pointer"
         >
-          {/* {showPassword ? <FiEyeOff /> : <FiEye />} */}
           <Image src={showPassword ? eyeCloseIcon : eyeIcon} alt="eye-password" width={24} height={24} />
         </span>
       )}
