@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
+import HamburgerMenu from "./common/HamburgerMenu";
 
 export default function NavBar() {
   return (
@@ -9,7 +10,16 @@ export default function NavBar() {
           Aawiz
         </Link>
 
+        <div className="items-center font-semibold gap-6 hidden md:flex ">
+          <Link href="/login">login</Link>
+          <Link href="/dashboard">dashboard</Link>
+        </div>
+
         <ThemeToggle />
+
+        <div className="md:hidden">
+          <HamburgerMenu />
+        </div>
       </div>
     </div>
   );
