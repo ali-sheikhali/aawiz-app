@@ -31,7 +31,7 @@ export async function generateMetadata(
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function UserDetailPage(props: PageProps) {
   const { id } = await props.params; 
 
   const user: UserType = await getSingleUser(Number(id));

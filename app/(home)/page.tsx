@@ -11,10 +11,10 @@ export default function Home() {
           src={heroHeader}
           alt="heroHeader"
           fill
-          className="object-cover"
+          // className="object-cover"
           loading="eager"
         />
-        <div className="absolute mt-20 md:mt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  z-20 text-white max-w-xl mx-auto">
+        <div className="absolute mt-40 md:mt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  z-20 text-white max-w-xl mx-auto">
           <div className="flex flex-col gap-6 items-center text-center">
             <h1 className="text-2xl lg:text-4xl font-bold">
               Transforming HR: Where Employee Wellness Meets Innovation!

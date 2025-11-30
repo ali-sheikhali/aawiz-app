@@ -1,9 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
-
-First, run the development server:
-
 ```bash
 npm run dev
 # or
@@ -14,23 +9,72 @@ pnpm dev
 bun dev
 ```
 
+## local host
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## vercel
+open [https://aawiz-app-azure.vercel.app/]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Next.js 16 Project – TypeScript, TailwindCSS, Parallel Routes
+This project is a modern and structured application built with Next.js 16, TypeScript, and TailwindCSS.
+It demonstrates usage of Parallel Routes, Server Components, Client Components, form validation, dynamic metadata, and theme management.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
+Next.js 16 (App Router)
+TypeScript with strict typing
+TailwindCSS for styling
+Parallel Routes for:
+Home
+Dashboard
+Login (with a layout that hides the Navbar)
+Dark / Light Theme using next-themes
+Form Validation with:
+react-hook-form
+zod
+Toast Notifications using react-hot-toast
+Shadcn/UI components for User Detail
+Reusable Components:
+Button
+FormInput
+FormInputWrapper
+SEO Optimization using:
+Metadata API
+generateMetadata
+Data Fetching with native fetch (recommended by Next.js)
+SSR usage + passing data into a Client Component wrapped with Suspense
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Login Page
+react-hook-form for form management
+zod for validation
+react-hot-toast for success/error messages after submission
+Reusable components:
+FormInput
+FormInputWrapper
+This page also has its own layout using Parallel Routes, allowing the layout to hide the navbar.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dashboard Page
+Fetches server-side data using fetch() (recommended by Next.js)
+Passes the fetched data to a Client Component (UserList)
+Uses React Suspense for loading states
+Contains metadata for SEO
+Displays each user with a reusable Button component
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## User Detail Page
+Uses generateMetadata to create dynamic metadata for each user
+Uses shadcn/ui components to display detailed user information
+Includes its own metadata for SEO purposes
+
+## Technologies Used
+Next.js 16
+TypeScript
+TailwindCSS
+next-themes
+react-hook-form
+zod
+react-hot-toast
+shadcn/ui
+React Suspense

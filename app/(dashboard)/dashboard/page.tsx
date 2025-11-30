@@ -20,7 +20,7 @@ export default async function DashBoardPage() {
 
   return (
     <div>
-      <Suspense fallback={<div>loading</div>}>
+      <Suspense fallback={<div>loading...</div>}>
         <UsersList users={resposne} />
       </Suspense>
     </div>
