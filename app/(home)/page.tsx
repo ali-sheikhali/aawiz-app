@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className="overflow-hidden relative">
       {/* overlay for hero header */}
-      <div className="absolute inset-0 bg-black/90 z-10"></div>
+      <div className="absolute inset-0 bg-black/85 z-10"></div>
       <div className="w-screen h-screen relative">
         <Image
           src={heroHeader}
           alt="heroHeader"
           fill
-          // className="object-cover"
+          className="object-cover"
           loading="eager"
         />
         <div className="absolute mt-40 md:mt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  z-20 text-white max-w-xl mx-auto">

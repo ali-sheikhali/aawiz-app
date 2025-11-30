@@ -8,7 +8,7 @@ export default function Button({ name, type = "submit" , variant="primary" }: Bu
 
   const base = "w-full text-center py-2 rounded-md cursor-pointer"  
    const variants = {
-    primary: "bg-green text-fill-primary ",
+    primary: "bg-green dark:bg-green/60 text-fill-primary ",
     secondary: "bg-gray-200 dark:bg-gray-700 dark:text-white"
   };  
   return (
